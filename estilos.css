@@ -89,10 +89,39 @@ footer {
     padding: 20px;
 }
 
-main {
-    background-color: rgb(255, 227, 227);
-}
-
 label {
     display: block;
+}
+
+/* gradientes */
+
+.fondoDegrade {
+    background-image: linear-gradient(to top, #f9d29d, #f8489b);
+}
+
+.entrarIzquierda {
+    animation-name: caja;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+/* keyframes */
+
+@keyframes caja {
+    0% {
+        transform: translateX(-450px);
+        opacity: 0;
+    }    
+
+    50% {
+        transform: translate(0);
+        transform: scale(0.5);
+    }
+    100% {
+        transform: translate(0);
+        transform: scale(1);
+        opacity: 1;
+
+    }
+
 }
